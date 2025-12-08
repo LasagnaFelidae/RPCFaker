@@ -25,9 +25,10 @@ VALID_APPNAME_CHARS = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ01234
 def is_valid(name: str) -> bool:
     return all(c in VALID_CHARS for c in name)
    
-def clean(name: str) -> str:
-    cd = "".join(c if c in VALID_APPNAME_CHARS else " " for c in name).strip()
+def clean(name: str, ispath: bool) -> str:
+    cd = "".join(c if c in (VALID_CHARS if ispath else VALID_APPNAME_CHARS) else " " for c in name).strip()
     return cd or "Unknown"
+
 
 
 class Launcher(QtWidgets.QMainWindow):
@@ -261,7 +262,7 @@ class Launcher(QtWidgets.QMainWindow):
         for i in exe_i:
             exec_path = i.data(QtCore.Qt.UserRole)
 
-            full_path = self.createEXE(clean(app_name), clean(exec_path))
+            full_path = self.createEXE(clean(app_name, False), clean(exec_path, True))
             # je pourrais faire via id mais c'est + facile de trouver 
             # ce qu'on veut supp via nom lol
 
