@@ -4,16 +4,16 @@ You can either use the script directly by cloning the repo and downloading the r
 
 # Usage
 ## Windows
-Download the executable from the releases tab on the right and run it.
-Search for a game, select it, then select one of the executables listed if any.
-You can kill all processes by using the kill button in the UI or by closing RPCFaker
+- Download the executable from the releases tab on the right and run it.
+- Search for a game, select it, then select one of the executables listed if any.
+- You can kill all processes by using the kill button in the UI or by closing RPCFaker
 
 ## Linux
-Download the executable from the releases tab and run it using Wine/Proton.
+- Download the executable from the releases tab and run it using Wine/Proton.
 > Adding it to your Steam library and forcing the use of a Steam Play Compat tool also works.
 
-Search for a game, select it, then select one of the executables listed if any.
-You can kill all processes by using the kill button in the UI or by closing RPCFaker
+- Search for a game, select it, then select one of the executables listed if any.
+- You can kill all processes by using the kill button in the UI or by closing RPCFaker
 
 
 # Disclaimer
